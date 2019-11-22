@@ -5,7 +5,7 @@ class usuarios  extends Model {
     static init(sequelize){
         super.init(
             {
-
+             id_organizacao: Sequelize.UUID,
              user_login: Sequelize.STRING,
              user_passwd: Sequelize.STRING,
              nome_completo: Sequelize.STRING, 
